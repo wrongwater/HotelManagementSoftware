@@ -1,53 +1,57 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.Scanner;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
-}
+public static void Main(String[] args)
+{
+        Scanner scanner =new Scanner(System.in);
+        int wybór = -1;
+        do     {
+                System.out.println("Main Menu");
+                String newline = System.lineSeparator();
+                System.out.println("1. Check-ins" + newline + "2. Check-outs" + newline + "3. Reservations" + newline +
+                "4. Booking" + newline + "5. Billing" + newline + "6. Room management" + newline + "7. Housekeepinng" +
+                "8. Room Service" + newline + "9. Parking" + newline + "10. Restaurant" + newline + "11. Swimming pool" +
+                newline + "12. Sauna" + newline + "Wciśnij wybraną opcje:");
+                try     {
+                        wybór = scanner.nextInt();
+                        switch (wybór)
+                                {
+                                case 1: System.out.println("Wybrano opcję pierwszą."); break;
+                                case 2: System.out.println("Wybrano opcję drugą.");    break;
+                                case 3: System.out.println("Wybrano opcje trzecią.");  break;
+                                case 4: System.out.println("Wybrano opcję czwartą.");  break;
+                                case 5: System.out.println("Wybrano opcję piątą.");    break;
+                                case 6: System.out.println("Wybrano opcję piątą.");    break;
+                                case 7: System.out.println("Wybrano opcję piątą.");    break;
+                                case 8: System.out.println("Wybrano opcję piątą.");    break;
+                                case 9: System.out.println("Wybrano opcję piątą.");    break;
+                                case 10:System.out.println("Wybrano opcję piątą.");    break;
+                                case 11:System.out.println("Wybrano opcję piątą.");break;
+                                case 12:System.out.println("Wybrano opcję piątą.");break;
+                                case 13:System.out.println("Wyjście z programu.");break;
+                                default:System.out.println("Niewłaściwy wybór. Wybierz opcje od 1 do 13.");
+                                }
+                        }
+                catch (InputMismatchException e)
+                        {
+                        while (wybór != 13) ;
+                        scanner.close();
+                        }
+                }
 
-import java.awt.event.WindowFocusListener;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
-}
 
-        main menu
 
-        1.
-        print("WELCOME TO HOTEL ANCASA")
 
-        print("1 Booking")
 
-        print("2 Rooms Info")
+        {
+            Guest pierwszygosc = new Guest();
+        }
 
-        print("3 Room Service")
 
-        print("4 Payment")
+enter the customers date
 
-        print("5 Record")
-
-        print("0 Exit")
-
-    2. enter the customers date
-
-        3. enter customer details
+enter customer details
 
 
 name:
@@ -63,13 +67,13 @@ check-in:
 
 
 
-4. provide customers
+provide customers
 
         5. customers room service
 
-6. payment
+payment
 
-7. record of customers staying at hotel
+record of customers staying at hotel
 
         customers lists
         functions booking, room info, restaurant, payment, record
@@ -79,7 +83,7 @@ check-in:
 
 
 //wymagane
-        - 10 klas
+//        - 10 klas
         - 2 hierarchie dziedziczenia
         - 2 klasy abstrakcyjne
         - 2 metody abstrakcyjne
@@ -105,5 +109,3 @@ check-in:
         - wyswietlane komunikaty konsoli
         - utworzone obietky kazdej klasy minimum dwa razy
         - uzyty raz enum
-
-
