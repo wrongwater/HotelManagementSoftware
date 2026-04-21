@@ -109,3 +109,15 @@ record of customers staying at hotel
         - wyswietlane komunikaty konsoli
         - utworzone obietky kazdej klasy minimum dwa razy
         - uzyty raz enum
+
+void main() {
+}
+
+void main() {
+}
+
+void main() {
+}
+
+void main() {
+}

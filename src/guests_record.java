@@ -1,2 +1,2 @@
-public class guests_record {
+public class guests_record extends guest{
 }
